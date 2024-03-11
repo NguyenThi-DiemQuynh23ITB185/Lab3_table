@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       input{
+        padding: 5px;
+       }
+       .btn{
+        margin: 10px;
+       }
+      </style>
+</head>
+
+<body>
+    <h1>APPLICATION FORM</h1>
+    <div class="checkbox-container" >
+        <p><label for="text">Fist Name</label>
+            <input type="text">
+        </p>
+        <div style="display: flex; align-items: center;">
+            <p>
+                <p>Education</p>
+                <input type="checkbox" id="Graduate" name="Education" value="Graduate">
+                <label for="Graduate"> Graduate</label>
+        <!-- thẻ input và label đi với nhau thì tự động xếp thnahf hàng ngang -->
+                <input type="checkbox" id="PostGraduate" name="Education" value="PostGraduate">
+                <label for="PostGraduate"> Post Graduate</label>
+            </p>
+        </div>
+    
+        <div style="display: flex">
+            <label for="gender">Gender</label>
+            <input type="checkbox" id="male" name="gender" value="male">
+            <label for="male"> Nam</label><br>
+            <input type="checkbox" id="female" name="gender" value="female">
+            <label for="female"> Nữ</label>
+            <!-- for="id" -->
+        </div>
+            <label for="text">Salary</label>
+            <input type="text">
+        <div>
+            <p>
+                <label for="text">Remarks</label>
+                <input type="text" placeholder="Type your text here">
+               </p>
+        </div>
+        <div>
+            <label for="text">Country</label>
+            <select name="country">
+                <option value="vn">Việt Nam</option>
+                <option value="us">Mỹ</option>
+                <option value="uk">Anh</option>
+                <option value="pl"> Philippip</option>
+            </select>
+        </div>
+  
+    </div>
+   
+    <div class="btn">
+        <button>SUBMIT</button>
+        <button>RESET</button>
+    </div>
+  
+</body>
+
+</html>
